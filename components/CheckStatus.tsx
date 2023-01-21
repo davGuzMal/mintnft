@@ -35,7 +35,7 @@ const Checkstatus: NextComponentType = () => {
         .then(result => alerts({
             icon: 'info',
             title: 'NFT Status',
-            text: result.metadata.name 
+            text: result.metadata?.name 
                 ?'Your NFT '+result.metadata.name+' is minted, congrats'
                 :'Your NFT is in status: '+result.onChain.status
                 ,
